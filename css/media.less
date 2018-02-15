@@ -1,0 +1,153 @@
+// MEDIA max-width 1150px =========================
+
+@media (max-width: 1150px) {
+  .container{
+    padding: 0 15px;
+  }
+  header{
+    .logo-nav{
+      flex-direction: column;
+      justify-content: center;
+      .logo{
+        margin-top: 2em;
+      }
+    }
+  }
+  #first_slide{
+    .first_slide_caption{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .first_slide_hesdings{
+        text-align: center;
+        float: none;
+        width: 100%;
+      }
+      .hand-img-holder{
+        display: none;
+      }    
+    }
+  }
+}
+
+// MEDIA max-width 768px =========================
+@media (max-width: 768px){
+    // SLIDER
+  #second_slide{
+    .second_slide-img{
+      display: none;
+    }
+    .second_slide_hesdings{
+      h2{
+        font-size: 32px;
+      }
+      p{
+        font-size: 16px;
+      }
+    }
+  }  
+  #third_slide{
+    .slide-bottom{
+      margin-top: 95px;
+    }
+    .slide_bottom_item{
+      font-size: 36px;
+    }
+  }
+
+ // OUR FEATURES
+  .our-features{
+    .features{
+      flex-direction: column;
+      .feature{
+        margin: 25px 30px;
+        &:first-child{
+          margin-top: 0;
+        }
+        &:last-child{
+          margin-bottom: 0;
+        }
+        h3{
+          font-size: 30px;
+          margin: 35px 20px;
+        }
+        img{
+          height: 60px;
+          width: auto;
+        }
+      }
+    }
+  }
+
+  // PORTFOLIO
+  .port-items{
+    justify-content: center;
+  }
+  .port-item{
+    padding: 0 5px;
+  }
+
+// LATEST NEWS
+  .latest_news{
+    h4{
+      text-align: center;
+      font-size: 36px;
+    }
+  }
+  .news-blocks{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    padding: 0 5%;
+    text-align: center; 
+  }
+
+  .news-block{
+    padding-top: 6em;
+    &:first-child{
+      padding-top: 0;
+    }
+    h5{
+      font-size: 18px;
+    }
+  }
+
+  // PAGE CONTENT
+  .page-content{
+    padding: 100px 0;
+  }
+  .content{
+    justify-content: center;
+    text-align: center;
+    img{
+      display: none;
+    }
+  }
+
+  // OUR CLIENTS
+  .our_clients-up_headings{
+    h4{
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 0 30px;
+      font-size: 20px;
+    }
+  }
+
+  // FOOTER
+  .footer-block{
+    margin-top: 2em;
+    &:first-child{
+      margin-top: 0;
+    }
+  }
+}
+
+// MEDIA max-width 480px =========================
+@media (max-width: 480px){
+  .footer-bottom{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
