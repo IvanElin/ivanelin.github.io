@@ -1,16 +1,28 @@
-// Smooth Scrolling
 $(document).ready(function(){
-  var scrollLink = $('.scroll');
 
+  // Smooth Scrolling
+  var scrollLink = $('.scroll');
   scrollLink.click(function(e) {
     var linkHref = $(this).attr('href');
-    // console.log($(linkHref).offset().top);
-
     $('html, body').animate({
       scrollTop: $(linkHref).offset().top
     }, 1000);
-    
+  
     e.preventDefault();
-
   });
+
+  // Scroll-to-the-Top button
+    // var offset = 450;
+    // var duration = 500;
+
+    // $(window).scroll(function(){
+    //   if($(this).scrollTop < offset){
+    //     $('#backToTop').fadeIn(duration);
+    //   }else{
+    //     $('#backToTop').fadeOut(duration);
+    //   }
+    // });
+
+
 })
+
