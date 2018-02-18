@@ -35,6 +35,7 @@
   }
 }
 
+
 // MEDIA max-width 768px =========================
 @media (max-width: 768px){
     // SLIDER
@@ -84,14 +85,6 @@
     }
   }
 
-  // PORTFOLIO
-  .port-items{
-    justify-content: center;
-  }
-  .port-item{
-    padding: 0 5px;
-  }
-
 // LATEST NEWS
   .latest_news{
     h4{
@@ -136,8 +129,19 @@
       transform: translateX(-50%);
       padding: 0 30px;
       font-size: 20px;
+      text-align: center;
     }
   }
+
+  .hr-up_headings:last-child{
+    margin-bottom: 2em;
+  }
+
+  // NEWEST PRODUCTS
+  .product{
+    padding: 5px 5px 0;
+  }
+
 
   // FOOTER
   .footer-block{
@@ -147,6 +151,108 @@
     }
   }
 }
+
+// MEDIA max-width 510px =========================
+@media (max-width: 510px){
+  // FEAURES
+  .our-features{
+    padding: 50px 0;
+    .features{
+      .feature{
+        margin: 25px 0;
+        padding: 0;
+        h3{
+          margin: 20px 0 10px; 
+        }
+      }
+    }
+  }
+
+  // PAGE CONTENT
+  .page-content {
+    padding: 60px 0;
+  }
+  .text-container{
+    h3 {
+      font-size: 30px;
+      font-weight: bold;
+    }   
+
+    p{
+      font-size: 20px;
+      margin: 20px 0;
+    }
+  }
+  .btn-green{
+    font-size: 18px;
+  }
+
+  // LATEST NEWS
+  .latest_news{
+    padding: 50px 0;
+    h4{
+      padding-bottom: 30px;
+    }
+  }
+  .news-blocks{
+    padding: 0;
+  }
+  hr{
+    margin: 5px 0 10px;
+  }
+
+  //PORTFOLIO
+  .portfolio{
+    padding: 50px 0;
+  }
+  #port-container{
+    padding: 0 2px;
+  }
+.port-item{
+  flex-basis: 158px;
+  margin-bottom: 5px;
+  &:hover figcaption{
+    top: 0px;
+  }
+ } 
+
+//  OUR CLIENTS
+.client-logos{
+  .client-logo{
+    flex-basis: 140px;
+  }
+}
+
+  //NEWEST PRODUCTS
+  .newest-products{
+    h4{
+      margin-bottom: 20px;
+    }
+  }
+
+  .products{
+   flex-direction: column;
+    justify-content: center;
+  }
+
+  .product{
+    margin: 1em 0;
+    h5{
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+    p{
+      font-size: 22px;
+    }
+  }
+
+  // CTA
+  .cta p{
+    padding: 30px 0;
+    font-size: 28px;
+  }
+}
+
 
 // MEDIA max-width 480px =========================
 @media (max-width: 480px){
@@ -159,7 +265,7 @@
     li{
       margin-left: 15px;
       a{
-        font-size: 30px;
+        font-size: 28px;
       }
     }
   }
