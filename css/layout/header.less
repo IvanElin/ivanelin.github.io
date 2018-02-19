@@ -1,0 +1,31 @@
+// HEADER
+header{
+  background-color: #000;
+  .logo-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    nav{
+      padding-top: 1em;
+      li{
+        display: inline-block;
+        padding: 12px 0;
+        margin-left: 10px;
+        &:first-child{
+          margin-left: 0;
+        }
+        a{
+          color: #888;
+          font-size: 13px;
+          text-transform: uppercase;
+          font-weight: bold;
+          transition: 250ms;
+          &:hover{
+            color:#fff;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+// OUR CLIENTS
+.our-clients{
+  padding: 50px 0;
+  background-color: #fff;
+}
+
+.our_clients-up_headings{
+  position: relative;
+  h4{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #000;
+    position: absolute;
+    top: -9px;
+    background-color: #fff;
+    padding-right: 30px;
+    font-weight: 600;
+  }
+}
+
+.hr-up_headings{
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.client-logos{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.client-logo{
+  border: 2px solid #fff;
+  transition: 250ms;
+  margin: 5px 3px;
+  position: relative;
+  cursor: pointer;
+  img{
+    width: 100%;
+    height: auto;
+  }
+  .img_pop-up{
+    position: absolute;
+    opacity: 0;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 8px 30px;
+    border-radius: 5px;
+    &:after{
+      content: '';
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 10px solid transparent;
+      border-top: 10px solid #333;
+   }
+  }
+  &:hover{
+    border: 2px solid #ddd;
+    .img_pop-up{
+      opacity: 1;
+      transition: 300ms;
+      top:-45px
+    }
+  }
+}

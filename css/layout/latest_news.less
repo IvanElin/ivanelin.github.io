@@ -1,0 +1,41 @@
+// LATEST NEWS
+.latest_news{
+  padding: 100px 0;
+  background-image: url(../img/latest_news-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  h4{
+    padding-bottom: 50px;
+  }
+}
+
+.news-blocks{
+  display: flex;
+  justify-content: space-between; 
+}
+
+.news-block{
+  padding: 0 10px;
+  display:  block;
+  color: #dddcda;
+  transition: 250ms;
+  img{
+    width: 100%;
+    height: auto;
+  }
+  h5{
+    margin-top: 35px;
+  }
+  p{
+    color: #dddcda; 
+  }
+  
+  &:hover img{
+    filter: grayscale(80%);
+    outline: 2px solid azure;
+  }
+
+  &:hover h5{
+    color: #b5b4b4;
+  }
+}
