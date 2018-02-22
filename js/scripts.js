@@ -11,17 +11,18 @@ $(document).ready(function(){
     e.preventDefault();
   });
 
-  // Scroll-to-the-Top button
-    // var offset = 450;
-    // var duration = 500;
 
-    // $(window).scroll(function(){
-    //   if($(this).scrollTop < offset){
-    //     $('#backToTop').fadeIn(duration);
-    //   }else{
-    //     $('#backToTop').fadeOut(duration);
-    //   }
-    // });
+// HUMBURGER menu
+// menu-toggle
+  $('.menu-toggle').click(function(){
+    $('.main-nav').toggleClass('is-open');
+    $('.burger').toggleClass('is-open');
+  });
+
+  $('.main-nav_item').click(function(){
+    $('.main-nav').toggleClass('is-open');
+    $('.burger').toggleClass('is-open');
+  })
 
 
 })
