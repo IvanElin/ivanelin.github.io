@@ -1,6 +1,10 @@
 // MEDIA max-width 1150px =========================
 
 @media (max-width: 1150px) {
+  #main-slider{
+    margin-top: 128px;
+  }
+
   .container{
     padding: 0 15px;
   }
@@ -9,12 +13,13 @@
       flex-direction: column;
       justify-content: center;
       .main-nav{
+        padding-top: .5em;
         a{
           font-size: 15px;
         }
       }
       .logo{
-        margin-top: 2em;
+        margin-top: 1em;
       }
     }
   }
@@ -45,13 +50,13 @@ header{
     justify-content: space-between;
     align-items: center;
     .main-nav{
-      // overflow: hidden;
+      overflow: hidden;
       width: 100vw;
       margin-left: -1em; 
       left:50%;
       background-color:#000;
       position: absolute;
-      z-index: 1000;
+      z-index: 90;
       top: 72px;
       left: 0;
       right: 0;
@@ -94,6 +99,10 @@ header{
 
 
     // SLIDER
+    #main-slider{
+      margin-top: 72px;
+    }
+
   #main-slider .carousel-item{
     height: 375px;
   }
