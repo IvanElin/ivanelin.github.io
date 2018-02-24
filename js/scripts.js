@@ -8,20 +8,22 @@ $(document).ready(function(){
     $('html, body').animate({
       scrollTop: $(linkHref).offset().top - $('.logo-nav').height()
     }, 1000);
-  
-    $(window).scroll(function(){
-      var scrollBarLocation = $(this).scrollTop;
-      console.log(scrollBarLocation);
-      // scrollLink.each(function(){
-      //   var sectionOffset = $(this.hash).offset().top;
-      //     console.log(sectionOffset);
-      //   if ( sectionOffset <= scrollBarLocation ){
-      //     $(this).addClass('.selected');
-      //   }
-      // })
-    })
   });
+  
+  $(window).scroll(function(){
+    var scrollBarLocation = $(this).scrollTop() + 100;
+    scrollLink.each(function(){
 
+      var sectionOffset = $(this.hash).offset().top - $('.logo-nav').height();
+
+      if( sectionOffset <= scrollBarLocation ) {
+        $(this).addClass('selected');
+        $(this).parent().siblings().children().removeClass('selected');
+
+      }
+    })
+   
+  })
 
 // HUMBURGER menu
 // menu-toggle
