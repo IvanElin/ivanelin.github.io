@@ -11,7 +11,7 @@ $(document).ready(function(){
   });
   
   $(window).scroll(function(){
-    var scrollBarLocation = $(this).scrollTop() + 100;
+    var scrollBarLocation = $(this).scrollTop() + 20;
     scrollLink.each(function(){
 
       var sectionOffset = $(this.hash).offset().top - $('.logo-nav').height();
@@ -19,11 +19,9 @@ $(document).ready(function(){
       if( sectionOffset <= scrollBarLocation ) {
         $(this).addClass('selected');
         $(this).parent().siblings().children().removeClass('selected');
-
       }
-    })
-   
-  })
+    })  
+  });
 
 // HUMBURGER menu
 // menu-toggle
@@ -36,5 +34,13 @@ $(document).ready(function(){
     $('.main-nav').toggleClass('is-open');
     $('.burger').toggleClass('is-open');
   })
-})
+});
 
+
+$(window).resize(function () {
+  var viewportWidth = $(window).width();
+  if (viewportWidth <= 600) {
+          $("#portfolio").removeClass("parallax--bg");
+          $("#latest_news").removeClass("parallax--bg");
+  }
+});
