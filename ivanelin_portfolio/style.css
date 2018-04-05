@@ -172,13 +172,23 @@ progress {
 	padding-left: 0;
 }
 
+.personal-photo {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
 
+	-ms-align-items: center;
+	align-items: center;
+}
 
 
 .personal-photo img {
 	width: 100%;
 	height: auto;
 }
+
 
 .portfolio-yellow-stick {
 	color: #ffc42c;
