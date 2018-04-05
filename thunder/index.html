@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+	<!-- BOOTSTRAP -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- My styles -->
+	<link rel="stylesheet" type="text/css" href="css/style.css" />	
+	<link rel="stylesheet" type="text/css" href="css/media.css" />
+	<meta charset="UTF-8">
+	<!-- FontAwesome -->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Thunder Portfolio Site</title>
+	<link rel="icon" type="image/png" href="img/favicon-32x32.png">
+</head>
+<body>
+	<header>
+			<!-- LOGO -->
+		<div class="container">
+			<div class="logo-nav" id="top">
+				<div class="logo">
+						<a href=""><img src="img/Logo.png" class="logo-img" alt="logo"></a>
+					</div>
+		
+					<!-- NAVigation -->
+					<nav class="main-nav">
+						<ul>
+							<li class="main-nav_item"><a class="scroll selected" href="#main-slider">Home</a></li>
+							<li class="main-nav_item"><a class="scroll" href="#our-features">Features</a></li>
+							<li class="main-nav_item"><a class="scroll" href="#portfolio">Portfolio</a></li>
+							<li class="main-nav_item"><a class="scroll" href="#get-stated">Get Started</a></li>
+							<li class="main-nav_item"><a class="scroll" href="#latest_news">News</a></li>
+							<li class="main-nav_item"><a class="scroll" href="#testimonials">Testimonials</a></li>
+							<li class="main-nav_item"><a class="scroll" href="#our-clients">Clients</a></li>
+							<li class="main-nav_item"><a class="scroll" href="#newest-products">Products</a></li>
+						</ul>
+					</nav>	
+
+					<a id="backToTop" href="" title="Go to top"><i class="fas fa-angle-up"></i></a>
+					
+					<div class="menu-toggle">
+						<div class="burger"></div>
+					</div>
+			</div>					
+		</div>
+	</header>
+
+	<!-- MAIN SLIDER
+	================================== -->
+	<section class="main-slider">
+						<div id="main-slider" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner">
+						<!-- First slide -->
+						<div class="carousel-item active" id="first_slide">
+							<div class="carousel-caption ">
+								<div class="container">
+											<div class="first_slide_caption">
+												<div class="first_slide_hesdings">
+														<a href="#"><h1>Hear the Thunder</h1></a>
+														<br>
+													<h2>A super clean and easy to use Modern WordPress Theme</h2>	
+												</div>
+												<div class="hand-img-holder">
+													<img src="img/hand.png" alt="hand" class="hand-img">
+												</div>														
+											</div>
+										</div>																
+								</div>
+						</div>
+						<!-- Second slide -->
+						<div class="carousel-item" id="second_slide">
+							<div class="carousel-caption ">
+								<div class="container">
+									<div class="second_slide_caption">
+										<div class="second_slide-img">
+											<img src="img/computers.png" alt="computers">
+										</div>
+										<div class="second_slide_hesdings">
+											<h2>Responsive & Retina Ready</h2>
+											<p>Our lovely theme was built with
+												responsive and retina functionality.
+												So no matter how, when or where
+												you and clients access your site it
+												always looks pixel perfect.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Third slide -->
+						<div class="carousel-item" id="third_slide">
+							<div class="carousel-caption ">
+									<div class="third_slide_caption">
+									<div class="container">
+										<h2>Looking For One Of The Best<br>	 WordPress Templates<br> On The Web?</h2>
+										<a href="#" class="btn btn-orange">Get Thunder</a>
+									</div>
+									<div class="slide-bottom">
+									<div class="container">
+											<div class="slide_bottom_items">
+													<div class="slide_bottom_item">1000<span>theme options</span> </div>
+													<div class="slide_bottom_item">100<span>shortcodes</span></div>
+													<div class="slide_bottom_item">infinite<span>possibilities</span></div>
+												</div>
+											</div>
+										</div>
+									</div>		
+								</div>
+							</div>
+						</div>
+
+					<!-- Carousel controls -->
+					<a class="carousel-control-prev" href="#main-slider" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#main-slider" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+	</section>
+
+			<!-- Modal window
+	================================== -->
+	<div class="modal">
+		<div class="modal-content">
+			<span class="closeModal">&times;</span>
+			<h3>Hear the Thunder</h3>
+			      <form method="post" action="/action_page_post.php">
+        <div>
+          <label for="usrnm" class="ui-hidden-accessible">Username:</label>
+          <input type="text" name="user" id="usrnm" placeholder="Username">
+          <br>
+          <label for="pswd" class="ui-hidden-accessible">Password:</label>
+          <input type="password" name="passw" id="pswd" placeholder="Password">
+          <br>
+          <label for="log">Keep me logged in</label>
+          <input type="checkbox" name="login" id="log" value="1" data-mini="true">
+          <input type="submit" data-inline="true" value="Log in">
+        </div>
+      </form>
+		</div>
+	</div>
+
+		<!-- FEATURES
+	================================== -->
+	<section class="our-features" id="our-features">
+		<div class="container">
+			<div class="features">		
+			<!-- Feature-1 -->
+				<div class="feature">
+					<img src="img/file.png" alt="file">
+					<h3>Powerful</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae porro asperiores, repellendus doloribus atque impedit quia error nostrum laborum repellat.</p>
+				</div>
+				<!-- Feature-2 -->
+				<div class="feature">
+					<img src="img/chart.png" alt="Chart">
+					<h3>Creative</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse animi vero reprehenderit quia est ut aut eaque temporibus facilis in.</p>
+				</div>
+				<!-- Feature-3 -->
+				<div class="feature">
+					<img src="img/globe.png" alt="Globe">
+					<h3>Localized</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae voluptate illum, maxime ipsum at voluptatem commodi velit dignissimos. </p>
+				</div>
+			</div>		
+		</div>
+	</section>
+
+		<!-- PORTFOLIO
+	================================== -->
+	<section class="portfolio parallax--bg" id="portfolio">
+		<div class="container" id="port-container">
+			<div class="upper-headings">
+				<h4>Recent Work</h4>
+				<a href="#" class="btn btn-gray">Browse all</a>
+			</div>
+			
+			<div class="port-items">
+
+				<!-- item-1 -->
+				<figure class="port-item">
+					<img src="img/portfolio-item.jpg" alt="port-item">
+					<figcaption class="port-desc">
+						<p>Simple Portfolio</p>
+						<a href="#" class="figcap-link"><i class="fas fa-search"></i></a>
+						<a href="#" class="figcap-link"><i class="far fa-file-alt"></i></a>
+					</figcaption>
+				</figure>
+
+				<!-- item-2 -->
+				<figure class="port-item">
+					<img src="img/portfolio-item.jpg" alt="port-item">
+					<figcaption class="port-desc">
+						<p>Simple Portfolio</p>
+						<a href="#" class="figcap-link"><i class="fas fa-search"></i></a>
+						<a href="#" class="figcap-link"><i class="far fa-file-alt"></i></a>
+					</figcaption>
+				</figure>
+				<!-- item-3 -->
+				<figure class="port-item">
+					<img src="img/portfolio-item.jpg" alt="port-item">
+					<figcaption class="port-desc">						
+						<p>Simple Portfolio</p>
+						<a href="#" class="figcap-link"><i class="fas fa-search"></i></a>
+						<a href="#" class="figcap-link"><i class="far fa-file-alt"></i></a>
+					</figcaption>
+				</figure>
+				<!-- item-4 -->
+				<figure class="port-item">
+					<img src="img/portfolio-item.jpg" alt="port-item">
+					<figcaption class="port-desc">						
+						<p>Simple Portfolio</p>
+						<a href="#" class="figcap-link"><i class="fas fa-search"></i></a>
+						<a href="#" class="figcap-link"><i class="far fa-file-alt"></i></a>
+					</figcaption>
+				</figure>
+				<!-- item-5 -->
+				<figure class="port-item">
+					<img src="img/portfolio-item.jpg" alt="port-item">
+					<figcaption class="port-desc">						
+						<p>Simple Portfolio</p>
+						<a href="#" class="figcap-link"><i class="fas fa-search"></i></a>
+						<a href="#" class="figcap-link"><i class="far fa-file-alt"></i></a>
+					</figcaption>
+				</figure>
+				<!-- item-6 -->
+				<figure class="port-item">
+					<img src="img/portfolio-item.jpg" alt="port-item">
+					<figcaption class="port-desc">						
+						<p>Simple Portfolio</p>
+						<a href="#" class="figcap-link"><i class="fas fa-search"></i></a>
+						<a href="#" class="figcap-link"><i class="far fa-file-alt"></i></a>
+					</figcaption>
+				</figure>
+				<!-- item-7 -->
+				<figure class="port-item">
+					<img src="img/portfolio-item.jpg" alt="port-item">
+					<figcaption class="port-desc">					
+						<p>Simple Portfolio</p>
+						<a href="#" class="figcap-link"><i class="fas fa-search"></i></a>
+						<a href="#" class="figcap-link"><i class="far fa-file-alt"></i></a>
+					</figcaption>
+				</figure>
+				<!-- item-8 -->
+				<figure class="port-item">
+					<img src="img/portfolio-item.jpg" alt="port-item">
+					<figcaption class="port-desc">					
+						<p>Simple Portfolio</p>
+						<a href="#" class="figcap-link"><i class="fas fa-search"></i></a>
+						<a href="#" class="figcap-link"><i class="far fa-file-alt"></i></a>
+					</figcaption>
+				</figure>				
+			</div>
+
+		</div>
+	</section>
+
+		<!-- PAGE CONTENT
+	================================== -->	
+	<section class="page-content" id="get-stated">
+		<div class="container">
+
+			<div class="content">
+				<div class="text-container">
+					<h3>Hear The Thunder?</h3>
+					<p class="page-content--p">Let me introduce you to a clean, simple, yet powerful <span>PREMIUM WORDPRESS THEME</span>, created specifically for you.</p>
+					<a href="#" class="btn btn-green">Get Started</a>
+				</div>
+
+				<img src="img/comp-img.png" alt="comp-img">
+			</div>
+
+		</div>
+	</section>
+
+	<!-- LATEST NEWS
+	================================== -->
+	<section class="latest_news parallax--bg" id="latest_news">
+		<div class="container">
+			<h4>Latest News</h4>
+			<!-- news-BLOCKS -->
+			<div class="news-blocks">
+				<!-- BLOCK-1 -->
+				<a href="#" class="news-block">
+					<img src="img/news-block-img.jpg" alt="news-block-img" class="block-img">
+					<h5>This is a simple blog post with an extra super long title</h5>
+					<hr>
+					<p class="news-block-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente placeat, excepturi id cupiditate voluptas repellendus, repellat. Atque nesciunt, velit iusto?</p>
+				</a>
+
+				<!-- BLOCK-2 -->
+				<a href="#" class="news-block">
+					<img src="img/news-block-img.jpg" alt="news-block-img" class="block-img">
+					<h5>This is a simple blog post with an extra super long title</h5>
+					<hr>
+					<p class="news-block-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente placeat, excepturi id cupiditate voluptas repellendus, repellat. Atque nesciunt, velit iusto?</p>
+				</a>
+
+				<!-- BLOCK-3 -->
+				<a href="#" class="news-block">
+					<img src="img/news-block-img.jpg" alt="news-block-img" class="block-img">
+					<h5>This is a simple blog post with an extra super long title</h5>
+					<hr>
+					<p class="news-block-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente placeat, excepturi id cupiditate voluptas repellendus, repellat. Atque nesciunt, velit iusto?</p>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- TESTIMONIALS
+	================================== -->
+	<section class="testimonials" id="testimonials">
+		<div class="container">
+			<div class="test-headers">			
+				<h4>Testimonials From Our Clients</h4>
+				<p class="test-headers--p">See what people are saying about our work</p>
+			</div>
+			<!-- Client-1 -->
+			<div class="client-feeback">
+				<p class="feedback-text">
+					This theme is amazing, I’ve used many themes in the past but nothing compares to Thunder - 5 stars all the way!
+				</p>
+				<div class="client-name">
+					Client Name
+				</div>
+
+				<ul>
+					<li class="client-img selected_client"><a href="#"><img src="img/client.jpg"  alt="client"></a></li>
+					<li class="client-img"><a href="#"><img src="img/client.jpg" alt="client"></a></li>
+					<li class="client-img"><a href="#"><img src="img/client.jpg"  alt="client"></a></li>
+					<li class="client-img"><a href="#"><img src="img/client.jpg"  alt="client"></a></li>
+					<li class="client-img"><a href="#"><img src="img/client.jpg"  alt="client"></a></li>		
+				</ul>
+			</div>
+		</div>
+	</section>
+
+		<!-- OUR CLIENTS
+	================================== -->
+	<section class="our-clients" id="our-clients">
+		<div class="container">
+			<div class="our_clients-up_headings">
+				<h4>Our Clients</h4>
+				<hr class="hr-up_headings">
+				<hr class="hr-up_headings">					
+			</div>
+			<div class="client-logos">
+
+				<div class="client-logo">
+					<div class="img_pop-up">Sample</div>	
+					<img src="img/sample-logo.png" alt="client-logo" class="client-logo-img">
+				</div>
+
+				<div class="client-logo">
+					<div class="img_pop-up">Sample</div>
+					<img src="img/sample-logo.png" alt="client-logo" class="client-logo-img">
+				</div>
+
+				<div class="client-logo">
+					<div class="img_pop-up">Sample</div>
+					<img src="img/sample-logo.png" alt="client-logo" class="client-logo-img">
+				</div>
+
+				<div class="client-logo">
+					<div class="img_pop-up">Sample</div>
+					<img src="img/sample-logo.png" alt="client-logo" class="client-logo-img">
+				</div>
+
+				<div class="client-logo">
+					<div class="img_pop-up">Sample</div>
+					<img src="img/sample-logo.png" alt="client-logo" class="client-logo-img">
+				</div>
+			</div>
+		</div>
+	</section>
+
+		<!-- NEWEST PRODUCTS
+	================================== -->
+	<section class="newest-products" id="newest-products" >
+		<div class="container">
+			<h4>Newest Products</h4>
+			<!-- Products -->
+			<div class="products">
+				<!-- Product-1 -->
+				<div class="product">
+					<img src="img/product.jpg" alt="product" class="product-img">
+					<div class="product-text">
+						<h5>Woo Album #1</h5>
+						<p>$3</p>
+					</div>
+				</div>
+
+					<!-- Product-2 -->
+				<div class="product">
+					<img src="img/product.jpg" alt="product" class="product-img">
+					<div class="product-text">
+						<h5>Woo Album #1</h5>
+						<p>$3</p>
+					</div>
+				</div>
+
+					<!-- Product-3 -->
+				<div class="product">
+					<img src="img/product.jpg" alt="product" class="product-img">
+					<div class="product-text">
+						<h5>Woo Album #1</h5>
+						<p>$3</p>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</section>
+
+			<!-- CALL TO ACTION
+	================================== -->
+	<section class="cta">
+		<div class="container">
+			<p>Don’t wait, starty today with Thunder for <a href="#">WordPress!</a></p>
+		</div>
+	</section>
+
+		<!-- FOOTER
+	================================== -->
+	<footer>
+			<div class="container">
+					<div class="footer-blocks">
+						<!-- recent posts -->
+						<div class="footer-block recent-posts">
+							<h4>Recent Posts</h4>
+							<p>Lorem ipsum dolor.</p>
+							<p>This is a sample blog post</p>
+							<p>This is another sample blog post</p>
+							<p>This is one more sample blog post</p>
+							<p>This is yet another sample</p>
+							<p>This is a fifth sample blog post</p>
+						</div>
+		
+						<!-- recent comments -->
+						<div class="footer-block recent-comments">
+							<h4>Recent Comments</h4>
+							<p>visitor on This is a fifth sample blog post</p>
+							<p>visitor on This is another sample blog post
+							</p>
+							<p>visitor on This is yet another sample blog post</p>
+							<p>visitor on This is yet another sample blog post</p>
+							<p>visitor on This is a sample blog post</p>
+						</div>
+		
+						<!-- Tag Cloud -->
+						<div class="footer-block tag-cloud">
+							<h4>Tag Cloud</h4>
+							<a href="#" class="tag">tag</a>
+							<a href="#" class="tag">sample</a>
+							<a href="#" class="tag">post</a>
+							<a href="#" class="tag">sample</a>
+							<a href="#" class="tag">post</a>
+							<a href="#" class="tag">tag</a>
+							<a href="#" class="tag">thunder</a>
+							<a href="#" class="tag">tag</a>
+							<a href="#" class="tag">sample</a>
+						</div>
+							
+							<!-- Tunder -->
+							<div class="footer-block thunder">
+								<h4>Thunder</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat excepturi quam aut natus illo, explicabo nisi quod dignissimos qui cupiditate exercitationem eligendi inventore delectus, laboriosam animi dolore asperiores. Ut, sit?</p>
+		
+								<input type="text" placeholder="Search...">
+							</div>
+		
+					</div>
+		
+					<!-- footer bottom -->
+					<div class="footer-bottom">
+						<div class="copyright">
+							<p>copyright 2018 - <span>Thunder</span></p>
+						</div>
+	
+						<ul class="social-links">
+							<li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+							<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+							<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fab fa-github"></i></a></li>
+							<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+							<li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+						</ul>	
+					</div>		
+				</div>
+			</div>
+	</footer>
+
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- My scripts -->
+<script src="js/scripts.js"></script>
+<script src="js/parallax.js"></script>
+</body>
+</html>
